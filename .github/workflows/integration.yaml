@@ -10,5 +10,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: integration
         run: |
-          podman pull registry.opensuse.org/devel/openqa/ci/containers/serviced
+          podman pull registry.opensuse.org/home/ybonatakis/branches/devel/openqa/ci/containers16.0/serviced:latest
           make test_docker PRIVILEGED_TESTS=1
